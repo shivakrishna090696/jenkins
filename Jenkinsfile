@@ -10,7 +10,7 @@ pipeline {
         stage('docker build') {
             steps {
                 script {
-                    sh 'docker build -t shivakrishna .'
+                    sh 'sudo docker build -t shivakrishna .'
                 }
             }
         }

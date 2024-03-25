@@ -7,5 +7,12 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/shivakrishna090696/jenkins.git'
             }
         }
+        stage('docker build') {
+            steps {
+                script {
+                    sh 'docker build -t shivakrishna .'
+                }
+            }
+        }
     }    
 }
